@@ -1,19 +1,8 @@
-// sw.js
-self.addEventListener('install', (event) => {
-    event.waitUntil(
-        caches.open('my-audio-cache').then((cache) => {
-            return cache.addAll([
-                'http://your-icecast-server:8000/stream', // Cache the Icecast stream
-                // Add other assets you want to cache (CSS, JS, images, etc.)
-            ]);
-        })
-    );
-});
+// custom-player.js
+// You can add additional functionality here if needed
+// For example, handling play/pause, volume control, etc.
 
-self.addEventListener('fetch', (event) => {
-    event.respondWith(
-        caches.match(event.request).then((response) => {
-            return response || fetch(event.request);
-        })
-    );
-});
+// Example: Log a message when the player starts
+console.log("Custom Icecast player initialized!");
+
+// You can add more custom logic as required
