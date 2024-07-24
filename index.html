@@ -1,18 +1,15 @@
-<!DOCTYPE html>
+  <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Icecast Player</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Icecast Radio Player</title>
 </head>
 <body>
-    <!-- Icecast audio player -->
-    <audio controls autoplay>
-        <source src="http://188.228.2.11:8000/stream" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <!-- Include your custom JS file -->
-    <script src="custom-player.js"></script>
+<h1>Icecast Radio Stream</h1>
+<audio id="player" controls autoplay>
+<source src="http://your_icecast_server_url:port/stream" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
 </body>
 </html>
